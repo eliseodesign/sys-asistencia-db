@@ -1,16 +1,21 @@
 # sys-asistencia-db
 
-Sistemas de bases de datos para el proyecto [sys-asistencia-desktop](https://github.com/eliseodesign/sys-asistencia-desktop)
+## Descripción
+Sistemas de bases de datos sqlserver para el proyecto [sys-asistencia-desktop](https://github.com/eliseodesign/sys-asistencia-desktop)
 
 Puedes ver el diagrama E-R haciendo [click aquí](./docs/schema-diagram.jpg)
 
+
+## Como usar
 Puedes clonar o descargar el repo y crear la base de datos con las tablas ejecutando **run.bat**
 
 Puede que tu usuario *System Administrator* no tenga acceso a login asi que puedes...
-```ALTER LOGIN sa WITH PASSWORD = 'tu_nueva_contraseña';
+```sql
+ALTER LOGIN sa WITH PASSWORD = 'tu_nueva_contraseña';
 GO
 ALTER LOGIN sa ENABLE;
-GO```
+GO
+```
 
 
 

@@ -1,6 +1,7 @@
-CREATE DATABASE BDSysAsistenia
-USE BDSysAsistenia
-
+CREATE DATABASE BDSysAsistencia
+GO
+USE BDSysAsistencia
+GO
 CREATE TABLE Grupo(
 	Id Tinyint Not Null Primary Key Identity(1,1),
 	Nombre Varchar(7) Not Null,

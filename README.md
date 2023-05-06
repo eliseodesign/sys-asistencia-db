@@ -4,6 +4,9 @@ Sistemas de bases de datos para el proyecto [sys-asistencia-desktop](https://git
 
 Puedes ver el diagrama E-R haciendo [click aquí](./docs/schema-diagram.jpg)
 
+Puedes clonar o descargar el repo y crear la base de datos con las tablas con **create-db.sh**
+
+
 ## Estructuras de carpetas
 
 ```markdown

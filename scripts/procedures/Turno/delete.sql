@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteTurno
-AS
-BEGIN
-
-END

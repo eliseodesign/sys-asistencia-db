@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPcreateEstudiante
-AS
-BEGIN
-
-END

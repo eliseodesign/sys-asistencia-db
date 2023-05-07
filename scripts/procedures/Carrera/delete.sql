@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteCarrera
-AS
-BEGIN
-
-END

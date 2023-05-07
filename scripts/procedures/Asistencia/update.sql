@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPupdateAsistencia
-AS
-BEGIN
-
-END

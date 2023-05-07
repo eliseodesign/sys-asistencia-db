@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPupdateNomenclatura
-AS
-BEGIN
-
-END

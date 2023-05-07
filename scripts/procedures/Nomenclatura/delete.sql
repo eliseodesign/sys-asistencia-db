@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteNomenclatura
-AS
-BEGIN
-
-END

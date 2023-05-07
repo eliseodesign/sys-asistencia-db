@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteGrupo
-AS
-BEGIN
-
-END

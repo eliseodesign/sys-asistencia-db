@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPcreateNomenclatura
-AS
-BEGIN
-
-END

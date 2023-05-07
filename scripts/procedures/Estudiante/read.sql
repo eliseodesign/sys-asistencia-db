@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPreadEstudiante
-AS
-BEGIN
-
-END

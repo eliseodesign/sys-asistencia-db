@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteCriterio
-AS
-BEGIN
-
-END

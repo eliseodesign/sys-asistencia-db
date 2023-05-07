@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPreadCarrera
-AS
-BEGIN
-
-END

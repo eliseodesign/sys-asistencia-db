@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPreadGrupoAnio
-AS
-BEGIN
-
-END

@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteDocente
-AS
-BEGIN
-
-END

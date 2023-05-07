@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPcreateTurno
-AS
-BEGIN
-
-END

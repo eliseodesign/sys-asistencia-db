@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteAnio
-AS
-BEGIN
-
-END

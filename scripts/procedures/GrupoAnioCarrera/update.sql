@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPupdateGrupoAnioCarrera
-AS
-BEGIN
-
-END

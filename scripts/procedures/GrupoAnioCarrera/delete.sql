@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPdeleteGrupoAnioCarrera
-AS
-BEGIN
-
-END

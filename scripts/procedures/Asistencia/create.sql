@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPcreateAsistencia
-AS
-BEGIN
-
-END

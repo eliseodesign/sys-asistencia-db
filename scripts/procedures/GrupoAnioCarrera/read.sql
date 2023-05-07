@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPreadGrupoAnioCarrera
-AS
-BEGIN
-
-END

@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPcreateCriterio
-AS
-BEGIN
-
-END

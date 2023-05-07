@@ -1,5 +1,0 @@
-CREATE PROCEDURE SPcreateGrupoAnio
-AS
-BEGIN
-
-END

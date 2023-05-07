@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPdeleteAsistencia
+AS
+BEGIN
+
+END

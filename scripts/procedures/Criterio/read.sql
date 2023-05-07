@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPreadCriterio
+AS
+BEGIN
+
+END

@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPreadNomenclatura
+AS
+BEGIN
+
+END

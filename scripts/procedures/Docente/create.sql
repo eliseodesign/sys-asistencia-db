@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPcreateDocente
+AS
+BEGIN
+
+END

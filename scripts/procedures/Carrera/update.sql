@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPupdateCarrera
+AS
+BEGIN
+
+END

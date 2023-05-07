@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPreadTurno
+AS
+BEGIN
+
+END

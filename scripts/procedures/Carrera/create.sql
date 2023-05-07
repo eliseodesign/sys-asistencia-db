@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPcreateCarrera
+AS
+BEGIN
+
+END

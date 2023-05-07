@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPreadGrupo
+AS
+BEGIN
+
+END

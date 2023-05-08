@@ -2,6 +2,6 @@ CREATE PROCEDURE SPReadTurno
 AS
 BEGIN
     SET NOCOUNT ON;
-
-    SELECT * FROM Turno;
+    
+    SELECT Id, Nombre FROM Turno;
 END

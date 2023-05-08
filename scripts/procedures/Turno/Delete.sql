@@ -1,9 +1,19 @@
 CREATE PROCEDURE SPDeleteTurno
-    @Id INT
+(
+   @Id tinyint
+)
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    DELETE FROM Turno
-    WHERE Id = @Id;
+    IF(@Id IS NOT NULL)
+        BEGIN
+            DELETE FROM Turno WHERE Id = @Id;
+            PRINT 'Registro eliminado correctamente.';
+        END
+    ELSE
+        BEGIN
+            PRINT 'No se puede eliminar el registro.';
+        END
 END
+

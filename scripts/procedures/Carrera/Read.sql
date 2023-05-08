@@ -1,0 +1,7 @@
+CREATE PROCEDURE SPReadCarrera
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT * FROM Carrera;
+END

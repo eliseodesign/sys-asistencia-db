@@ -1,11 +1,18 @@
 CREATE PROCEDURE SPCeateTurno
-    @Nombre VARCHAR(50)
+(
+   @Nombre varchar(7)
+)
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    INSERT INTO Turno(Nombre)
-    VALUES (@Nombre);
-
-    SELECT @@IDENTITY AS 'Id';
+    IF(@Nombre != '')
+        BEGIN
+            INSERT INTO Turno(Nombre) VALUES (@Nombre);
+            SELECT @@IDENTITY AS 'Id';
+        END
+    ELSE
+        BEGIN
+            PRINT 'No se puede agregar un turno sin nombre.';
+        END
 END

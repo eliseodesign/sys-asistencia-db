@@ -1,11 +1,19 @@
 CREATE PROCEDURE SPUpdateTurno
-    @Id INT,
-    @Nombre VARCHAR(50)
+(
+   @Id tinyint,
+   @Nombre varchar(7)
+)
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    UPDATE Turno
-    SET Nombre = @Nombre
-    WHERE Id = @Id;
+    IF(@Id IS NOT NULL AND @Nombre != '')
+        BEGIN
+            UPDATE Turno SET Nombre = @Nombre WHERE Id = @Id;
+            PRINT 'Registro actualizado correctamente.';
+        END
+    ELSE
+        BEGIN
+            PRINT 'No se puede actualizar el registro.';
+        END
 END

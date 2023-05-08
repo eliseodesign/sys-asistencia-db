@@ -1,0 +1,11 @@
+CREATE PROCEDURE SPCeateTurno
+    @Nombre VARCHAR(50)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO Turno(Nombre)
+    VALUES (@Nombre);
+
+    SELECT @@IDENTITY AS 'Id';
+END

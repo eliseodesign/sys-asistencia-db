@@ -2,9 +2,10 @@ CREATE DATABASE BDSysAsistencia
 GO
 USE BDSysAsistencia
 GO
+
 CREATE TABLE Grupo(
 	Id Tinyint Not Null Primary Key Identity(1,1),
-	Nombre Varchar(7) Not Null,
+	Nombre Varchar(7) Not Null
 );
 
 CREATE TABLE Anio(
@@ -35,7 +36,8 @@ CREATE TABLE GrupoAnioCarrera(
 	EstudiantesMax TinyInt Not Null,
 	DiasPresencial bit Not Null,
 	IdCarrera Tinyint Not Null Foreign Key References Carrera(Id),
-	IdGrupoAnio Tinyint Not Null Foreign Key References GrupoAnio(Id)
+	IdGrupoAnio Tinyint Not Null Foreign Key References GrupoAnio(Id),
+	IdTurno Tinyint Not Null Foreign Key References Turno(Id)
 );
 
 CREATE TABLE Docente(

@@ -1,0 +1,9 @@
+CREATE PROCEDURE SPDeleteTurno
+    @Id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DELETE FROM Turno
+    WHERE Id = @Id;
+END

@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPDeleteTurno
-(
    @Id tinyint
-)
 AS
 BEGIN
     SET NOCOUNT ON;

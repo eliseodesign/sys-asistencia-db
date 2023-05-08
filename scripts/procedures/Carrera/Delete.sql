@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPDeleteCarrera
-(
    @Id tinyint
-)
 AS
 BEGIN
     SET NOCOUNT ON;

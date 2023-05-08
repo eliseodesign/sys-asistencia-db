@@ -1,9 +1,7 @@
 CREATE PROCEDURE SPUpdateCarrera
-(
     @Id TINYINT,
     @Nombre VARCHAR(50),
     @Siglas VARCHAR(7)
-)
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -24,6 +22,6 @@ BEGIN
     END
     ELSE
         BEGIN
-            PRINT 'ERROR: Debe ingresar un id válido, un nombre y siglas válidas para la carrera.';
+            PRINT 'ERROR: Debe ingrer un id válido, un nombre y siglas válidas para la carrera.';
         END
 END

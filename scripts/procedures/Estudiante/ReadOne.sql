@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPReadOneEstudiante
-(
   @Id Int
-)
 AS
 BEGIN
   IF(@Id IS NOT NULL)

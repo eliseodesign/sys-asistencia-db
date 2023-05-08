@@ -1,8 +1,6 @@
 CREATE PROCEDURE SPUpdateAnio 
-(
   @Id Tinyint,
   @Nombre Varchar(7)
-)
 AS
 BEGIN
     IF(@Nombre != '')

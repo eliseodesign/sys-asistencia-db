@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPDeleteNomenclatura
-(
     @Id tinyint
-)
 AS
 BEGIN
     IF @Id IS NOT NULL

@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPDeleteAnio
-(
   @Id Tinyint
-)
 AS
 BEGIN
   IF EXISTS(SELECT * FROM Anio WHERE Id = @Id)

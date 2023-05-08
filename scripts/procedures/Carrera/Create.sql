@@ -1,8 +1,6 @@
 CREATE PROCEDURE SPCreateCarrera
-(
     @Nombre VARCHAR(50),
     @Siglas VARCHAR(7)
-)
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -12,14 +10,10 @@ BEGIN
             INSERT INTO Carrera (Nombre, Siglas)
             VALUES (@Nombre, @Siglas);
 
-            SELECT @@IDENTITY AS 'Id';
+            SELECT SCOPE_IDENTITY() AS 'Id';
         END
     ELSE
         BEGIN
             PRINT 'ERROR: Debe ingresar un nombre y siglas válidas para la carrera.';
         END
 END
-
-EXEC SPCreateCarrera 'Tec. en ing. de desarrollo de software', 'TIDS'
-EXEC SPCreateCarrera 'Tec. en ing. electrica', 'TIE'
-EXEC SPCreateCarrera 'Tec. en gestion y desarrollo de turismo', 'TGDT'

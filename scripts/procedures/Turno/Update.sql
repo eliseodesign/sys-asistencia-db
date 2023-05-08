@@ -1,8 +1,6 @@
 CREATE PROCEDURE SPUpdateTurno
-(
    @Id tinyint,
    @Nombre varchar(7)
-)
 AS
 BEGIN
     SET NOCOUNT ON;

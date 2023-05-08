@@ -16,6 +16,7 @@ BEGIN
         BEGIN
           INSERT INTO Docente (Nombre,Apellidos,Dui,Cel,Huella,IdGrupo, IdCarrera)
           VALUES(@Nombre, @Apellidos, @Dui, @Cel, @Huella, @IdGrupo, @IdCarrera);
+          SELECT SCOPE_IDENTITY() AS 'Id';
         END
         ELSE
           PRINT 'Ya existe un Docente con ese DUI'

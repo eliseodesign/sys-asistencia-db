@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPDeleteDocente
-(
   @Id Int
-)
 AS 
 BEGIN 
     IF EXISTS (SELECT * FROM Docente WHERE Id = @Id) AND @Id Is NOT NULL

@@ -1,9 +1,7 @@
 CREATE PROCEDURE SPUpdateNomenclatura
-(
     @Id tinyint,
     @Letra char(1),
     @Descripcion varchar(20)
-)
 AS
 BEGIN
     IF @Id IS NOT NULL AND @Letra != '' AND @Descripcion != ''

@@ -1,6 +1,6 @@
 CREATE PROCEDURE SPUpdateDocente
     @Id Int,
-	  @Nombre varchar(20),
+	@Nombre varchar(20),
     @Apellidos varchar(20),
     @Dui varchar(9),
     @Cel varchar(9),

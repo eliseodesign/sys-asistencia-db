@@ -1,7 +1,5 @@
 CREATE PROCEDURE SPDeleteEstudiante
-(
   @Id Int
-)
 AS 
 BEGIN 
     IF EXISTS (SELECT * FROM Estudiante WHERE Id = @Id) AND @Id Is NOT NULL

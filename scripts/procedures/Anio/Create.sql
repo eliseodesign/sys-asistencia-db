@@ -12,3 +12,7 @@ BEGIN
    ELSE
       PRINT 'No se ha insertado el Anio debido a datos faltantes'
 END
+
+exec SPCreateAnio 'Primer Año'
+exec SPCreateAnio 'Segundo Año'
+exec SPCreateAnio 'Tercer Año'

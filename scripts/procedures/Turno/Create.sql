@@ -16,3 +16,7 @@ BEGIN
             PRINT 'No se puede agregar un turno sin nombre.';
         END
 END
+
+EXEC SPCeateTurno 'Mañana'
+EXEC SPCeateTurno 'Tarde'
+EXEC SPCeateTurno 'Noche'

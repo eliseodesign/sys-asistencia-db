@@ -19,3 +19,7 @@ BEGIN
             PRINT 'ERROR: Debe ingresar un nombre y siglas válidas para la carrera.';
         END
 END
+
+EXEC SPCreateCarrera 'Tec. en ing. de desarrollo de software', 'TIDS'
+EXEC SPCreateCarrera 'Tec. en ing. electrica', 'TIE'
+EXEC SPCreateCarrera 'Tec. en gestion y desarrollo de turismo', 'TGDT'

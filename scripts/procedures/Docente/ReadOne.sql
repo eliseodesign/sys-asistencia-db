@@ -4,7 +4,7 @@ AS
 BEGIN
   IF(@Id IS NOT NULL)
   BEGIN 
-    SELECT * FROM Docente
+    SELECT * FROM Docente WHERE Id = @Id
   END
   ELSE 
     PRINT 'No existe alumno con Id ' + @Id

@@ -1,4 +1,4 @@
-CREATE PROCEDURE SPCeateTurno
+CREATE PROCEDURE SPCreateTurno
    @Nombre varchar(7)
 AS
 BEGIN

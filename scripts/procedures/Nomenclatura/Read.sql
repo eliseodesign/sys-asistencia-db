@@ -1,4 +1,4 @@
-CREATE PROCEDURE SP_ObtenerTodasNomenclaturas
+CREATE PROCEDURE SPReadNomenclaturas
 AS
 BEGIN
     SELECT * FROM Nomenclatura

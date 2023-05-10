@@ -1,0 +1,7 @@
+CREATE PROCEDURE SPReadGrupo
+AS
+BEGIN
+    SELECT *
+    FROM Grupo
+END;
+

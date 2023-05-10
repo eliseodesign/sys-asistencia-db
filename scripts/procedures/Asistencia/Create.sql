@@ -17,17 +17,9 @@ BEGIN
 	  VALUES (@Observaciones, @fechaActual, @IdEstudiante, @IdDocente,
 	  @IdCriterio, @IdNomenclatura)
 
-      PRINT 'La asistencia se insertó correctamente'
+      PRINT 'La asistencia se insertÃ³ correctamente'
       SELECT SCOPE_IDENTITY() AS 'Id';
    END
    ELSE
       PRINT 'No se ha insertado debido a datos faltantes'
 END;
-
-EXEC SPCreateAsistencia 
-   @Observaciones = 'Llegó tarde el cmd',
-   @fechaActual = NULL, --Pa que tome la fecha de la BD
-   @IdEstudiante = 1,
-   @IdDocente = 2,
-   @IdCriterio = 3,
-   @IdNomenclatura = 4;

@@ -3,12 +3,6 @@ GO
 USE BDSysAsistencia
 GO
 
--- CREATE TABLE GrupoAnio(
--- 	Id Tinyint Not Null Primary Key Identity(1,1),
--- 	IdGrupo Tinyint Not Null Foreign Key References Grupo(Id),
--- 	IdAnio Tinyint Not Null Foreign Key References Anio(Id)
--- );
-
 CREATE TABLE NumGrupo(
 	Id Tinyint Not Null Primary Key Identity(1,1),
 	Nombre Varchar(7) Not Null

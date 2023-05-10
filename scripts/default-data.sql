@@ -1,10 +1,10 @@
-EXEC SPCreateAnio 'Primer Año'
-EXEC SPCreateAnio 'Segundo Año'
-EXEC SPCreateAnio 'Tercer Año'
+EXEC SPCreateAnio '1° Año'
+EXEC SPCreateAnio '2° Año'
+EXEC SPCreateAnio '4° Año articulado'
 
-EXEC SPCeateTurno 'Mañana'
-EXEC SPCeateTurno 'Tarde'
-EXEC SPCeateTurno 'Noche'
+EXEC SPCeateTurno 'Matutino'
+EXEC SPCeateTurno 'Vespertino'
+EXEC SPCeateTurno 'Nocturno'
 
 EXEC SPCreateCarrera 'Tec. en ing. de desarrollo de software', 'TIDS'
 EXEC SPCreateCarrera 'Tec. en ing. electrica', 'TIE'

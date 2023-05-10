@@ -1,0 +1,6 @@
+CREATE PROCEDURE SPDeleteNumGrupo
+  @Id Tinyint
+AS  
+BEGIN
+  DELETE FROM NumGrupo WHERE Id = @Id
+END;

@@ -2,4 +2,4 @@ CREATE PROCEDURE SPReadEstudiante
 AS
 BEGIN
   SELECT * FROM Estudiante
-END
+END;

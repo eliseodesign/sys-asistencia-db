@@ -23,12 +23,3 @@ BEGIN
 
 END;
 
-
-exec SPCrearEstudiante
-    'Eliseo Francisco',
-    'Arevalo Espinoza',
-    '1234567-9',
-    '2122-2121',
-    0x4D5A90000300000004000000FFFF0000,
-    1;
-

@@ -16,4 +16,4 @@ BEGIN
 			Fecha = (CASE WHEN @fechaActual is null THEN GETDATE() ELSE @fechaActual END)
 		WHERE IdEstudiante = @IdEstudiante 
 	END
-END
+END;

@@ -4,7 +4,6 @@ CREATE PROCEDURE SPUpdateGrupo
 	@EstudiantesMax Tinyint,
 	@DiasPresencial bit,
 	-- FK's
-	-- @IdNumGrupo Tinyint,
 	@IdAnio Tinyint,
 	@IdCarrera Tinyint ,
 	@IdTurno Tinyint
@@ -19,21 +18,28 @@ BEGIN
       )
 		BEGIN
 			IF (
-				EXISTS (SELECT * FROM Carrera WHERE Id = @IdCarrera) 
-				AND EXISTS (SELECT * FROM Anio WHERE Id = @IdAnio) 
-				AND EXISTS (SELECT * FROM Turno WHERE Id = @IdTurno)
-				AND EXISTS (SELECT * FROM Grupo WHERE Id = @Id)
-				)
-			BEGIN
-				UPDATE Grupo 
-				SET EstudiantesMax = @estudiantesMax, 
-					DiasPresencial = @diasPresencial, 
-					IdAnio = @idAnio, 
-					IdCarrera = @idCarrera, 
-					IdTurno = @idTurno 
-				WHERE Id = @Id
+					EXISTS (SELECT * FROM Carrera WHERE Id = @IdCarrera) 
+					AND EXISTS (SELECT * FROM Anio WHERE Id = @IdAnio) 
+					AND EXISTS (SELECT * FROM Turno WHERE Id = @IdTurno)
+					AND EXISTS (SELECT * FROM Grupo WHERE Id = @Id)
+					)
+					BEGIN
+						UPDATE Grupo 
+						SET EstudiantesMax = @estudiantesMax, 
+							DiasPresencial = @diasPresencial, 
+							IdAnio = @idAnio, 
+							IdCarrera = @idCarrera, 
+							IdTurno = @idTurno 
+						WHERE Id = @Id
 
-			END
+					END
+			ELSE	
+				BEGIN 
+					PRINT('No existen registros para esos datos')
+				END
 		END
-	
+	ELSE
+		BEGIN
+			PRINT('Los datos insertados son invalidos')
+		END
 END;

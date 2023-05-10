@@ -20,8 +20,10 @@ BEGIN
                 Cel = @Cel, Huella = @Huella, IdGrupo = @IdGrupo
 			      WHERE Id = @Id;
             END
-        END
+        ELSE 
+            PRINT('No existe el estudiante');
+    END;
     ELSE
-        PRINT 'Datos erroneos'
+        PRINT('Datos erroneos')
 
 END;

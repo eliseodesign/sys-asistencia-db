@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPReadCriterios
+AS  
+BEGIN
+  SELECT * FROM Criterio
+END;

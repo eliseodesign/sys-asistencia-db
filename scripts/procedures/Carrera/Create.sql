@@ -16,4 +16,4 @@ BEGIN
         BEGIN
             PRINT 'ERROR: Debe ingresar un nombre y siglas válidas para la carrera.';
         END
-END
+END;

@@ -8,4 +8,4 @@ BEGIN
   END
   ELSE 
     PRINT 'No existe alumno con Id ' + @Id
-END
+END;

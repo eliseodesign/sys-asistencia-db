@@ -5,15 +5,15 @@ CREATE PROCEDURE SPUpdateNomenclatura
 AS
 BEGIN
     IF @Id IS NOT NULL AND @Letra != '' AND @Descripcion != ''
-    BEGIN
-        UPDATE Nomenclatura SET
-            Letra = @Letra,
-            Descripcion = @Descripcion
-        WHERE Id = @Id
-        
-    END
+        BEGIN
+            UPDATE Nomenclatura SET
+                Letra = @Letra,
+                Descripcion = @Descripcion
+            WHERE Id = @Id
+            
+        END
     ELSE
-    BEGIN
-        PRINT 'No se pudo actualizar el registro debido a que algunos campos estaban vacíos o el Id es nulo'
-    END
-END
+        BEGIN
+            PRINT 'No se pudo actualizar el registro debido a que algunos campos estaban vacíos o el Id es nulo'
+        END
+END;

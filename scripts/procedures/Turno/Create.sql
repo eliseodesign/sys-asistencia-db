@@ -7,7 +7,7 @@ BEGIN
     IF(@Nombre != '')
         BEGIN
             INSERT INTO Turno(Nombre) VALUES (@Nombre);
-             SELECT SCOPE_IDENTITY() AS 'Id';
+            SELECT SCOPE_IDENTITY() AS 'Id';
         END
     ELSE
         BEGIN

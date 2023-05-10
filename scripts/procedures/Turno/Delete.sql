@@ -4,7 +4,8 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    IF(@Id IS NOT NULL)
+    IF(@Id IS NOT NULL
+       AND EXISTS(SELECT * FROM Turno WHERE Id = @Id))
         BEGIN
             DELETE FROM Turno WHERE Id = @Id;
             PRINT 'Registro eliminado correctamente.';
@@ -13,5 +14,5 @@ BEGIN
         BEGIN
             PRINT 'No se puede eliminar el registro.';
         END
-END
+END;
 

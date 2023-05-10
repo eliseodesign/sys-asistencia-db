@@ -14,4 +14,4 @@ BEGIN
       BEGIN
          PRINT 'No se pudo insertar el registro debido a que algunos campos estaban vacíos'
       END
-END
+END;

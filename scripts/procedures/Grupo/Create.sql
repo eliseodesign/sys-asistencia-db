@@ -50,9 +50,17 @@ BEGIN
 
         -- insertar el nuevo grupo con el IdNumGrupo obtenido
               INSERT INTO Grupo (EstudiantesMax, DiasPresencial, IdNumGrupo, IdAnio, IdCarrera, IdTurno)
-              VALUES (@estudiantesMax, @diasPresencial, @idNumGrupo, @idAnio, @idCarrera, @idTurno)
+              VALUES (@EstudiantesMax, @DiasPresencial, @IdNumGrupo, @IdAnio, @IdCarrera, @IdTurno)
 
         END;
-      
+      ELSE
+            BEGIN
+            PRINT('No existen datos en otras tablas')
+            END;
       END;
-END
+  ELSE
+      BEGIN
+            PRINT('Los datos son invalidos')
+      END;
+      
+END;

@@ -4,4 +4,4 @@ BEGIN
     SET NOCOUNT ON;
     
     SELECT Id, Nombre FROM Turno;
-END
+END;

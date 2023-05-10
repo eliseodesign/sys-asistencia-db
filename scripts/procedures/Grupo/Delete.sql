@@ -4,11 +4,11 @@ CREATE PROCEDURE SPDeleteGrupo
 )
 AS
 BEGIN
-	IF (@Id IS NOT NULL)
-	BEGIN
-		IF EXISTS (SELECT * FROM Grupo WHERE Id = @Id)
+	IF (@Id IS NOT NULL AND EXISTS(SELECT * FROM Grupo WHERE Id = @Id))
 		BEGIN
 			DELETE FROM Grupo WHERE Id = @Id
-		END
-	END
-END
+		END;
+	ELSE
+			PRINT('Id de Grupo erroneo')
+	
+END;

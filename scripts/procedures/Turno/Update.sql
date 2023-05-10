@@ -5,7 +5,8 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    IF(@Id IS NOT NULL AND @Nombre != '')
+    IF(@Id IS NOT NULL AND @Nombre != ''
+       AND EXISTS(SELECT * FROM Turno WHERE Id = @Id))
         BEGIN
             UPDATE Turno SET Nombre = @Nombre WHERE Id = @Id;
             PRINT 'Registro actualizado correctamente.';
@@ -14,4 +15,4 @@ BEGIN
         BEGIN
             PRINT 'No se puede actualizar el registro.';
         END
-END
+END;

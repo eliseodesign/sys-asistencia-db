@@ -1,0 +1,14 @@
+CREATE PROCEDURE SPDeleteGrupo
+(
+	@Id tinyint
+)
+AS
+BEGIN
+	IF (@Id IS NOT NULL)
+	BEGIN
+		IF EXISTS (SELECT * FROM Grupo WHERE Id = @Id)
+		BEGIN
+			DELETE FROM Grupo WHERE Id = @Id
+		END
+	END
+END

@@ -1,4 +1,4 @@
-CREATE PROCEDURE SPReadNomenclaturas
+CREATE PROCEDURE SPReadNomenclatura
 AS
 BEGIN
     SELECT * FROM Nomenclatura

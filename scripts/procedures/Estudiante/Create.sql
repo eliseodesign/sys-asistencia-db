@@ -1,4 +1,4 @@
-CREATE PROCEDURE SPCrearEstudiante
+CREATE PROCEDURE SPCreateEstudiante
 	  @Nombre varchar(20),
     @Apellidos varchar(20),
     @Dui varchar(9),

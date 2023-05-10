@@ -21,7 +21,7 @@ CREATE TABLE Carrera(
 
 CREATE TABLE Turno(
 	Id Tinyint Not Null Primary Key Identity(1,1),
-	Nombre Varchar(7) Not Null
+	Nombre Varchar(10) Not Null
 );
 
 CREATE TABLE Grupo(

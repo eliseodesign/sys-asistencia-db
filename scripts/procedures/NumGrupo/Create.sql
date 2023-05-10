@@ -4,5 +4,5 @@ AS
 BEGIN
   INSERT INTO NumGrupo (Nombre)
   VALUES (@Nombre)
-  SET @idNumGrupo = SCOPE_IDENTITY()
+  SELECT SCOPE_IDENTITY() as 'Id'
 END;

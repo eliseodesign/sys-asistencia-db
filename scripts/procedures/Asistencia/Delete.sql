@@ -10,6 +10,3 @@ BEGIN
     ELSE
       PRINT 'El Id especificado no corresponde a un registro'
 END;
-
-exec SPDeleteAsistencia
-	1;

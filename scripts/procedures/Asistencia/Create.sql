@@ -8,8 +8,6 @@ CREATE PROCEDURE SPCreateAsistencia
    @IdNomenclatura tinyint
 AS
 BEGIN
-   SET @fechaActual = GETDATE()
-   IF(@fechaActual != null)
    BEGIN
       INSERT INTO Asistencia(Observaciones, Fecha, IdEstudiante, IdDocente, 
 	  IdCriterio, IdNomenclatura) 
@@ -20,6 +18,4 @@ BEGIN
       PRINT 'La asistencia se insertó correctamente'
       SELECT SCOPE_IDENTITY() AS 'Id';
    END
-   ELSE
-      PRINT 'No se ha insertado debido a datos faltantes'
 END;

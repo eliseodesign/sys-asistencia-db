@@ -1,7 +1,7 @@
 CREATE PROCEDURE SPCreateGrupo
 (
 	@EstudiantesMax Tinyint,
-	@DiasPresencial bit,
+	@DiasPresencial Varchar(40),
 	-- FK's
 	-- @IdNumGrupo Tinyint,
 	@IdAnio Tinyint,

@@ -21,13 +21,13 @@ CREATE TABLE Carrera(
 
 CREATE TABLE Turno(
 	Id Tinyint Not Null Primary Key Identity(1,1),
-	Nombre Varchar(10) Not Null
+	Nombre Varchar(12) Not Null
 );
 
 CREATE TABLE Grupo(
 	Id Tinyint Not Null Primary Key Identity(1,1),
 	EstudiantesMax TinyInt Not Null,
-	DiasPresencial bit Not Null,
+	DiasPresencial varchar(40) Not Null,
 	-- FK's
 	IdNumGrupo Tinyint Not Null Foreign Key References NumGrupo(Id),
 	IdAnio Tinyint Not Null Foreign Key References Anio(Id),

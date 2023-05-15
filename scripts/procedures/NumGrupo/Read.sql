@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPReadNumGrupo
+AS
+BEGIN
+  SELECT * FROM NumGrupo
+END;

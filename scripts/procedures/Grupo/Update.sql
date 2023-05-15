@@ -2,7 +2,7 @@ CREATE PROCEDURE SPUpdateGrupo
 (
 	@Id tinyint,
 	@EstudiantesMax Tinyint,
-	@DiasPresencial bit,
+	@DiasPresencial varchar(40),
 	-- FK's
 	@IdAnio Tinyint,
 	@IdCarrera Tinyint ,

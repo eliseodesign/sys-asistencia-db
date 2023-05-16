@@ -10,7 +10,7 @@ CREATE PROCEDURE SPUpdateDocente
 AS 
 BEGIN
     IF ( @Nombre != '' AND @Apellido != '' AND @Dui != '' AND @Cel != '' 
-         AND @IdGrupo IS NOT NULL AND @IdCarrera IS NOT NULL AND @Id IS NOT NULL 
+         AND @IdCarrera IS NOT NULL AND @Id IS NOT NULL 
          AND @Huella IS NOT NULL AND DATALENGTH(@Huella) > 0
         )
         BEGIN
@@ -18,7 +18,7 @@ BEGIN
             BEGIN
             UPDATE Docente 
             SET Nombre = @Nombre, Apellido = @Apellido, 
-                Cel = @Cel, Huella = @Huella, IdGrupo = @IdGrupo, IdCarrera = @IdCarrera
+                Cel = @Cel, Huella = @Huella, IdCarrera = @IdCarrera
 			      WHERE Id = @Id;
             END
         END

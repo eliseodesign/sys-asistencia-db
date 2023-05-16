@@ -7,7 +7,7 @@ BEGIN
 
     IF (@Nombre != '' AND @Siglas != '')
         BEGIN
-            INSERT INTO Carrera (Nombre, Siglas)
+            INSERT INTO Carrera (Nombre, Sigla)
             VALUES (@Nombre, @Siglas);
 
             SELECT SCOPE_IDENTITY() AS 'Id';

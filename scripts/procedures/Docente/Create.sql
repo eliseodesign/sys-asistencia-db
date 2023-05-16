@@ -8,7 +8,7 @@ CREATE PROCEDURE SPCreateDocente
 AS 
 BEGIN
     IF ( @Nombre != '' AND @Apellido != '' AND @Dui != '' AND @Cel != '' 
-         AND @IdGrupo IS NOT NULL AND @IdCarrera IS NOT NULL
+         AND @IdCarrera IS NOT NULL
          AND @Huella IS NOT NULL AND DATALENGTH(@Huella) > 0
         )
         IF NOT EXISTS(SELECT * FROM Docente WHERE Dui = @Dui)

@@ -1,14 +1,14 @@
 CREATE PROCEDURE SPCreateCarrera
     @Nombre VARCHAR(50),
-    @Siglas VARCHAR(7)
+    @Sigla VARCHAR(7)
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    IF (@Nombre != '' AND @Siglas != '')
+    IF (@Nombre != '' AND @Sigla != '')
         BEGIN
             INSERT INTO Carrera (Nombre, Sigla)
-            VALUES (@Nombre, @Siglas);
+            VALUES (@Nombre, @Sigla);
 
             SELECT SCOPE_IDENTITY() AS 'Id';
         END

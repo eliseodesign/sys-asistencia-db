@@ -16,7 +16,7 @@ CREATE TABLE Anio(
 CREATE TABLE Carrera(
 	Id Tinyint Not Null Primary Key Identity(1,1),
 	Nombre Varchar(50),
-	Siglas Varchar(7) Not Null
+	Sigla Varchar(7) Not Null
 );
 
 CREATE TABLE Turno(
@@ -38,7 +38,7 @@ CREATE TABLE Grupo(
 CREATE TABLE Docente(
 	Id Int Not Null Primary Key Identity(1,1),
 	Nombre Varchar(20) Not Null, 
-	Apellidos Varchar(20) Not Null, 
+	Apellido Varchar(20) Not Null, 
 	Dui char(9) Null,
 	Cel char(9) Null,
 	Huella Varbinary(Max) Not Null,
@@ -48,7 +48,7 @@ CREATE TABLE Docente(
 CREATE TABLE Estudiante(
 	Id Int Not Null Primary Key Identity(1,1),
 	Nombre Varchar(20) Not Null, 
-	Apellidos Varchar(20) Not Null, 
+	Apellido Varchar(20) Not Null, 
 	Dui char(9) Null,
 	Cel char(9) Null,
 	Huella Varbinary(Max) Not Null,

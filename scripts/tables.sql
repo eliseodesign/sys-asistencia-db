@@ -42,7 +42,6 @@ CREATE TABLE Docente(
 	Dui char(9) Null,
 	Cel char(9) Null,
 	Huella Varbinary(Max) Not Null,
-	IdGrupo Tinyint Not Null Foreign Key References Grupo(Id),
 	IdCarrera Tinyint Not Null Foreign Key References Carrera(Id)
 );
 

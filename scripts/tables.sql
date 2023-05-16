@@ -79,3 +79,9 @@ CREATE TABLE Asistencia(
 	Fecha DateTime Not Null
 	
 );
+
+CREATE TABLE DocenteGrupo(
+	Id int Not Null primary Key Identity(1,1),
+	IdDocente Int Not Null Foreign Key References Docente(Id),
+	IdGrupo Tinyint Not Null Foreign Key References Grupo(Id)
+);

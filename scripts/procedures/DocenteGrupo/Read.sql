@@ -1,0 +1,5 @@
+CREATE PROCEDURE SPReadDocenteGrupo
+AS
+BEGIN
+  SELECT * FROM DocenteGrupo
+END

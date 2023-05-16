@@ -61,3 +61,10 @@ VALUES (1, 1, 1, 1, 'Observaciones Asistencia 1', GETDATE());
 UPDATE Asistencia SET Observaciones = 'Observaciones Asistencia 2' WHERE Id = 1;
 DELETE FROM Asistencia WHERE Id = 1;
 SELECT * FROM Asistencia;
+
+-- DocenteGrupo
+INSERT INTO DocenteGrupo (IdDocente, IdGrupo)
+VALUES (1, 1);
+UPDATE DocenteGrupo SET IdGrupo = 2 WHERE Id = 1;
+DELETE FROM DocenteGrupo WHERE Id = 1;
+SELECT * FROM DocenteGrupo;

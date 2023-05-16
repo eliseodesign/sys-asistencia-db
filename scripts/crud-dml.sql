@@ -30,8 +30,8 @@ DELETE FROM Grupo WHERE Id = 1;
 SELECT * FROM Grupo;
 
 -- Docente
-INSERT INTO Docente (Nombre, Apellidos, Dui, Cel, Huella, IdGrupo, IdCarrera)
-VALUES ('Helen', 'Bolaños', '12345678-9', '71234567', 0x0, 1, 1);
+INSERT INTO Docente (Nombre, Apellidos, Dui, Cel, Huella, IdCarrera)
+VALUES ('Helen', 'Bolaños', '12345678-9', '71234567', 0x0, 1);
 UPDATE Docente SET Nombre = 'Docente2', Apellidos = 'Apellido2' WHERE Id = 1;
 DELETE FROM Docente WHERE Id = 1;
 SELECT * FROM Docente;

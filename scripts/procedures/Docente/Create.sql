@@ -4,7 +4,6 @@ CREATE PROCEDURE SPCreateDocente
     @Dui varchar(9),
     @Cel varchar(9),
     @Huella varbinary(max),
-    @IdGrupo tinyint,
     @IdCarrera tinyint
 AS 
 BEGIN
@@ -14,15 +13,14 @@ BEGIN
         )
         IF NOT EXISTS(SELECT * FROM Docente WHERE Dui = @Dui)
         BEGIN
-          INSERT INTO Docente (Nombre,Apellidos,Dui,Cel,Huella,IdGrupo, IdCarrera)
-          VALUES(@Nombre, @Apellidos, @Dui, @Cel, @Huella, @IdGrupo, @IdCarrera);
+          INSERT INTO Docente (Nombre,Apellidos,Dui,Cel,Huella, IdCarrera)
+          VALUES(@Nombre, @Apellidos, @Dui, @Cel, @Huella, @IdCarrera);
           SELECT SCOPE_IDENTITY() AS 'Id';
         END
         ELSE
           PRINT 'Ya existe un Docente con ese DUI'
     ELSE
         PRINT 'Datos erroneos'
-
 END;
 
 

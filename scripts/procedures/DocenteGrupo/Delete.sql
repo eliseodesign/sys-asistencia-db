@@ -1,10 +1,10 @@
-CREATE PROCEDURE SPDeleteDocenteGrupo
+CREATE PROCEDURE SPDeleteGrupoDocente
   @Id int
 AS
 BEGIN
-  IF EXISTS(SELECT * FROM DocenteGrupo WHERE Id = @Id)
+  IF EXISTS(SELECT * FROM GrupoDocente WHERE Id = @Id)
     BEGIN 
-    DELETE FROM DocenteGrupo WHERE Id = @Id
+    DELETE FROM GrupoDocente WHERE Id = @Id
     END
   ELSE
     PRINT 'El registro no existe'

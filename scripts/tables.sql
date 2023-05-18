@@ -79,7 +79,7 @@ CREATE TABLE Asistencia(
 	
 );
 
-CREATE TABLE DocenteGrupo(
+CREATE TABLE GrupoDocente(
 	Id int Not Null primary Key Identity(1,1),
 	IdDocente Int Not Null Foreign Key References Docente(Id),
 	IdGrupo Tinyint Not Null Foreign Key References Grupo(Id)

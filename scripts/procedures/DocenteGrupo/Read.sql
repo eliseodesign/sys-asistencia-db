@@ -1,5 +1,5 @@
-CREATE PROCEDURE SPReadDocenteGrupo
+CREATE PROCEDURE SPReadGrupoDocente
 AS
 BEGIN
-  SELECT * FROM DocenteGrupo
+  SELECT * FROM GrupoDocente
 END

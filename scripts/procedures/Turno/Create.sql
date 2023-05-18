@@ -1,5 +1,5 @@
 CREATE PROCEDURE SPCreateTurno
-   @Nombre varchar(7)
+   @Nombre varchar(12)
 AS
 BEGIN
     SET NOCOUNT ON;

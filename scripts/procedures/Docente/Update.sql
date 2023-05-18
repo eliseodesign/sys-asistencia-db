@@ -5,7 +5,6 @@ CREATE PROCEDURE SPUpdateDocente
     @Dui varchar(9),
     @Cel varchar(9),
     @Huella varbinary(max),
-    @IdGrupo tinyint,
     @IdCarrera tinyint
 AS 
 BEGIN

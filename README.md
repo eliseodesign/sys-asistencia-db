@@ -3,7 +3,7 @@
 ## Descripción
 Sistemas de bases de datos sqlserver para el proyecto [sys-asistencia-desktop](https://github.com/eliseodesign/sys-asistencia-desktop)
 
-Puedes ver el diagrama E-R haciendo [click aquí](./docs/schema-diagram.jpg)
+Puedes ver el diagrama E-R haciendo [click aquí](./docs/database-diagram.png)
 
 
 ## Como usar
